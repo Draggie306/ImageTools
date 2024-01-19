@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en_gb">
+<head>
+    <meta charset="UTF-8">
+    <title>Photo Tools - Circlular Crop</title>
+    <link rel="stylesheet" href="css/style.css">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="description" content="Create a circular crop of any image.">
+    <meta name="keywords" content="circular crop, crop, circle, image, photo, tool, online, free">
+    <meta name="author" content="iBaguette">
+    <meta property="og:title" content="Photo Tools - Circlular Crop">
+    <link href="ImageCircle.css" rel="stylesheet" type="text/css">
+
+</head>
+<body>
+    <h1>Photo Tools - Circlular Crop</h1>
+    <p>Add an image and click on it to download the cropped version.</p><br>
+    <p>Note: No image is uploaded to a server. Everything is done in your browser. No account or payment required.</p><br>
+    <p>Images outputted are PNGs with the same dimensions as the input image.</p><br>
+
+    <input type="file" id="imageLoader" name="imageLoader" accept="image/*">
+    <canvas id="imageCanvas"></canvas>
+    <div id="loading" style="display: none;"></div>
+            <div class="spinner"></div>
+            <p id="status">Select an image to begin.</p>
+    </div>
+
+    <script defer src="circularcrop.js"></script>
+</body>
+</html>
